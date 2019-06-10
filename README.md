@@ -1,6 +1,6 @@
 ## Asterisk PJSIP CentOS 7 Installer
 
-This script will install latest Asterisk with PJSIP on Centos 7 64 bit system.
+This script will install latest Asterisk with PJSIP on ***fresh*** Centos 7 64 bit system.
 
 ## How to use
 
