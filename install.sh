@@ -65,3 +65,4 @@ echo $randstring | sudo -S service asterisk start
 
 echo Your asterisk user password is: $randstring
 echo Reboot is recommended
+echo Access Asterisk console with asterisk -rvv
