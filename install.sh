@@ -5,7 +5,7 @@ yum install -y epel-release dmidecode gcc-c++ ncurses-devel libxml2-devel make w
 adduser asterisk -c "Asterisk User"
 
 randstring=$(< /dev/urandom tr -dc A-Za-z0-9 | head -c${1:-32};echo;)
-echo $randstring >> /home/asterisk/password
+echo $randstring > /home/asterisk/password
 echo $randstring | passwd --stdin asterisk
 
 usermod -aG wheel asterisk
