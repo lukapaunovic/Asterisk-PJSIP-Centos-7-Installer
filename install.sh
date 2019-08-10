@@ -2,7 +2,7 @@ randstring=$(< /dev/urandom tr -dc A-Za-z0-9 | head -c${1:-32};echo;)
 
 sed -i s/^SELINUX=.*$/SELINUX=disabled/ /etc/selinux/config
 
-yum install -y epel-release dmidecode gcc-c++ ncurses-devel libxml2-devel make wget openssl-devel newt-devel kernel-devel sqlite-devel libuuid-devel gtk2-devel jansson-devel binutils-devel patch
+yum install -y epel-release dmidecode gcc-c++ ncurses-devel libxml2-devel make wget openssl-devel newt-devel kernel-devel sqlite-devel libuuid-devel gtk2-devel jansson-devel binutils-devel patch bzip2 bzip2-libs
 
 adduser asterisk -c "Asterisk User"
 
