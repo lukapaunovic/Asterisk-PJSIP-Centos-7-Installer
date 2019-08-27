@@ -22,11 +22,11 @@ tar xvjf pjproject-2.8.tar.bz2
 
 cd pjproject-2.8
 
-./configure CFLAGS="-DNDEBUG -DPJ_HAS_IPV6=1" --prefix=/usr --libdir=/usr/lib64 --enable-shared --disable-video --disable-sound --disable-opencore-amr
+echo $randstring | sudo -S ./configure CFLAGS="-DNDEBUG -DPJ_HAS_IPV6=1" --prefix=/usr --libdir=/usr/lib64 --enable-shared --disable-video --disable-sound --disable-opencore-amr
 
-make dep
+echo $randstring | sudo -S make dep
 
-make
+echo $randstring | sudo -S make
 
 echo $randstring | sudo -S make install
 echo $randstring | sudo -S ldconfig
